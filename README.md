@@ -161,8 +161,3 @@ Website: [https://godz.rf.gd](https://godz.rf.gd) — GitHub: [@Godrulerz](https
 ```
 
 ---
-
-If you want, I can:
-
-* Generate a polished `README.md` file ready to paste into your repo (with badges & TOC),
-* Or scaffold the starter project files (`App.tsx`, `SearchBar.tsx`, `WeatherCard.tsx`, `weatherService.ts`) in TypeScript + Tailwind so you can run it immediately.
