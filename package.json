@@ -1,12 +1,9 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "weather-check",
   "private": true,
-  "version": "0.0.0",
-  "author": "ASHISH KUMAR (Godrulerz)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Godrulerz/weather-now.git"
-  },
+  "version": "1.0.0",
+  "author": "Ashish Kumar",
+  "description": "A simple weather app built with React and TypeScript",
   "type": "module",
   "scripts": {
     "dev": "vite",

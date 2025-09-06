@@ -9,6 +9,7 @@ interface SearchBarProps {
 export function SearchBar({ onSearch, isLoading }: SearchBarProps) {
   const [query, setQuery] = useState('');
 
+  // Handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
@@ -23,7 +24,7 @@ export function SearchBar({ onSearch, isLoading }: SearchBarProps) {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Enter city name..."
+          placeholder="Try 'London' or 'New York'..."
           className="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-300 rounded-2xl 
                    focus:border-blue-500 focus:ring-4 focus:ring-blue-200 focus:outline-none
                    transition-all duration-200 shadow-sm hover:shadow-md
@@ -42,7 +43,7 @@ export function SearchBar({ onSearch, isLoading }: SearchBarProps) {
                    disabled:bg-gray-400 disabled:cursor-not-allowed
                    transition-all duration-200 font-medium"
         >
-          {isLoading ? 'Searching...' : 'Search'}
+          {isLoading ? 'Loading...' : 'Search'}
         </button>
       </div>
     </form>
